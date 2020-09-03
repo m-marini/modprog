@@ -104,7 +104,7 @@ class ProgPane extends Component {
     super(props);
     this.state = {
       start: 1,
-      end: 5,
+      end: 1,
       pitch: 'C',
       minLen: 2,
       maxLen: 3
@@ -195,11 +195,11 @@ class ProgPane extends Component {
                 </FormGroup>
                 <FormGroup controlId="minLen">
                   <Form.Label>Min chain length</Form.Label>
-                  <LengthControl value={minLen} min={2} max={7} onChange={this.handleMinLen} />
+                  <LengthControl value={minLen} min={2} max={8} onChange={this.handleMinLen} />
                 </FormGroup>
                 <FormGroup controlId="minLen">
                   <Form.Label>Max chain length</Form.Label>
-                  <LengthControl value={maxLen} min={2} max={7} onChange={this.handleMaxLen} />
+                  <LengthControl value={maxLen} min={2} max={8} onChange={this.handleMaxLen} />
                 </FormGroup>
               </Form>
             </Col>

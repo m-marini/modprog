@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _, { map } from 'lodash';
 
 const Next = {
     2: [5, 3, 4, 6, 7],
@@ -102,12 +102,13 @@ function notContains(sequence, chord) {
  * }
  * ```
  */
-function addChord({ chords, priority }) {
+function addChord({ chords, priority }, { end, minLen }) {
     const last = _.last(chords);
     const nexts = nextCandidate(last);
     // filter for unique chord sequence
     const uniqueNexts = _.filter(nexts, s => {
-        return notContains(chords, s.chord);
+        return notContains(chords, s.chord) ||
+            (s.chord === end && chords.length + 1 >= minLen);
     });
     const result = _.map(uniqueNexts, r => {
         return {
@@ -153,24 +154,25 @@ function createProgressions({ start, end, minLen, maxLen, pitch }) {
     var seed = [{ chords: [start], priority: 0 }];
     var chains = [];
     for (var i = 1; i <= maxLen - 1; i++) {
-        const nexts = _(seed).map(s => addChord(s)).flatten().value();
+        const nexts = _(seed).map(s => addChord(s, { end, minLen })).flatten().value();
         const ary = _.partition(nexts, s => isFinal(s.chords, { end, minLen }));
         chains = _.concat(chains, ary[0]);
         seed = ary[1];
     }
-    chains = _.sortBy(chains, 'priority');
-    const chainsWithNames = _.map(chains, chain => {
-        const chordsWithNames = _.map(chain.chords, mode => {
-            return {
-                mode,
-                name: chordName(pitch, mode)
-            };
-        });
-        return {
-            chords: chordsWithNames,
-            priority: chain.priority
-        };
-    });
+    const chainsWithNames = _(chains).map(chain => {
+        chain.priority = chain.priority / (chain.chords.length - 1);
+        return chain;
+    }).sortBy('priority')
+        .map(chain => {
+            const chordsWithNames = _.map(chain.chords, mode => {
+                return {
+                    mode,
+                    name: chordName(pitch, mode)
+                };
+            });
+            chain.chords = chordsWithNames;
+            return chain;
+        }).value();
     const result = {
         pitch: pitch,
         chains: chainsWithNames
