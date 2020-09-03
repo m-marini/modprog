@@ -35,4 +35,4 @@ jobs:
         ftp-username: marco.marini
         ftp-password: ${{ secrets.FTP_KEY }}
         local-dir: build # This folder is NOT going to upload by default unless you add it to .git-ftp-include    
-        git-ftp-args: "--remote-root=./modprog"
+        git-ftp-args: "--remote-root ./modprog"
