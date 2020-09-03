@@ -169,7 +169,7 @@ class ProgPane extends Component {
     return (
       <div>
         <Navbar bg="dark" variant="dark" expand="lg">
-          <Navbar.Brand href="#home">Modal Progressions</Navbar.Brand>
+          <Navbar.Brand href="#home">Modal Progressions 1.0</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           </Navbar.Collapse>
