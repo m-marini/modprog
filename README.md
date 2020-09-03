@@ -1,4 +1,4 @@
-![Node.js CI](https://github.com/m-marini/modprog/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/m-marini/modprog/workflows/Node.js%20CI/badge.svg?branch=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
