@@ -1,4 +1,4 @@
-import _, { map } from 'lodash';
+import _ from 'lodash';
 
 const Next = {
     2: [5, 3, 4, 6, 7],
