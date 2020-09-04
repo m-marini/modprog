@@ -21,11 +21,12 @@ function Chords({ value }) {
 }
 
 function Chain({ value }) {
-  const { priority, chords } = value;
+  const { avgPriority, priority, chords } = value;
   const modes = _.join(_.map(chords, 'mode'), '-');
   return (<tr>
     <td>{modes}</td>
     <td><Chords value={chords} /></td>
+    <td>{avgPriority.toFixed(2)}</td>
     <td>{priority}</td>
   </tr>);
 }
@@ -38,7 +39,8 @@ function Chains({ value }) {
         <tr>
           <th>Modes</th>
           <th>Chords</th>
-          <th>Favored</th>
+          <th>Average Favor</th>
+          <th>Total Favor</th>
         </tr>
       </thead>
       <tbody>
@@ -169,7 +171,7 @@ class ProgPane extends Component {
     return (
       <div>
         <Navbar bg="dark" variant="dark" expand="lg">
-          <Navbar.Brand href="#home">Modal Progressions 1.0</Navbar.Brand>
+          <Navbar.Brand href="#home">Modal Progressions 1.1.0</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           </Navbar.Collapse>
