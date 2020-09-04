@@ -136,6 +136,7 @@ function chordName(pitch, mode) {
  *   chains: [
  *     {
  *       priority: int
+ *       avgPriority: int
  *       chords: [
  *          {
  *            mode: int
@@ -160,9 +161,9 @@ function createProgressions({ start, end, minLen, maxLen, pitch }) {
         seed = ary[1];
     }
     const chainsWithNames = _(chains).map(chain => {
-        chain.priority = chain.priority / (chain.chords.length - 1);
+        chain.avgPriority = chain.priority / (chain.chords.length - 1);
         return chain;
-    }).sortBy('priority')
+    }).sortBy('avgPriority', 'priority', chain => chain.chords.length)
         .map(chain => {
             const chordsWithNames = _.map(chain.chords, mode => {
                 return {
