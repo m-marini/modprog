@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.1] - 2020-09-11
+
+### Fixed
+
+- Issue #14: Home page link
+
 ## [1.1.0] - 2020-09-03
 
 ### Changed
