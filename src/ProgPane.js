@@ -3,7 +3,9 @@ import './App.css';
 import { createProgressions, Pitches } from './ModProg';
 
 import _ from 'lodash';
-import { Container, Navbar, Form, FormControl, FormGroup, Row, Col, Table, Badge, Alert } from 'react-bootstrap';
+import { Container, Navbar, Form, FormControl, FormGroup, Row, Col, Table, Badge, Alert, Nav } from 'react-bootstrap';
+
+const Version = "1.1.1";
 
 function Chords({ value }) {
   return (
@@ -171,9 +173,12 @@ class ProgPane extends Component {
     return (
       <div>
         <Navbar bg="dark" variant="dark" expand="lg">
-          <Navbar.Brand href="#home">Modal Progressions 1.1.0</Navbar.Brand>
+          <Navbar.Brand href="http://www.mmarini.org">www.mmarini.org</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="#">Modal Progressions {Version}</Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Navbar>
         <Container>
