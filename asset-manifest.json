@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/modprog/static/css/main.09b0d62f.chunk.css",
+    "main.js": "/modprog/static/js/main.3ed04c4b.chunk.js",
+    "main.js.map": "/modprog/static/js/main.3ed04c4b.chunk.js.map",
+    "runtime-main.js": "/modprog/static/js/runtime-main.9071e01f.js",
+    "runtime-main.js.map": "/modprog/static/js/runtime-main.9071e01f.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/modprog/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.1a5bc00a.chunk.js": "/modprog/static/js/2.1a5bc00a.chunk.js",
+    "static/js/2.1a5bc00a.chunk.js.map": "/modprog/static/js/2.1a5bc00a.chunk.js.map",
+    "index.html": "/modprog/index.html",
+    "precache-manifest.093848c101ce5fcb594409c402e8fdfd.js": "/modprog/precache-manifest.093848c101ce5fcb594409c402e8fdfd.js",
+    "service-worker.js": "/modprog/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/modprog/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.09b0d62f.chunk.css.map": "/modprog/static/css/main.09b0d62f.chunk.css.map",
+    "static/js/2.1a5bc00a.chunk.js.LICENSE.txt": "/modprog/static/js/2.1a5bc00a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9071e01f.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.1a5bc00a.chunk.js",
+    "static/css/main.09b0d62f.chunk.css",
+    "static/js/main.3ed04c4b.chunk.js"
+  ]
+}
