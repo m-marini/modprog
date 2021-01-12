@@ -9,11 +9,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [1.1.2] - 2021-01-12
+## [1.1.4] - 2021-01-12
 
 ### Fixed
 
 - Issue #18: upgraded audit fix and minor fix
+
+## [1.1.2] - 2020-12-17
 
 ### Changed
 

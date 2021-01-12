@@ -1,11 +1,11 @@
 import React, { Component, FunctionComponent } from 'react';
 import './App.css';
 import { createProgressions, Pitches, Pitch, ChordMode, Progressions, ChordChain, Chord } from './ModProg';
-
 import _ from 'lodash';
 import { Container, Navbar, Form, FormControl, FormGroup, Row, Col, Table, Badge, Alert, Nav } from 'react-bootstrap';
+import {version} from '../package.json';
 
-const Version = "1.1.2";
+const Version = version;
 
 const ChordModes = _.range(1, 8);
 
