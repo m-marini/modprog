@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/modprog/static/css/main.bfe5c144.chunk.css",
-    "main.js": "/modprog/static/js/main.bca75621.chunk.js",
-    "main.js.map": "/modprog/static/js/main.bca75621.chunk.js.map",
+    "main.js": "/modprog/static/js/main.a1875a1f.chunk.js",
+    "main.js.map": "/modprog/static/js/main.a1875a1f.chunk.js.map",
     "runtime-main.js": "/modprog/static/js/runtime-main.12b35f08.js",
     "runtime-main.js.map": "/modprog/static/js/runtime-main.12b35f08.js.map",
     "static/css/2.d470c34f.chunk.css": "/modprog/static/css/2.d470c34f.chunk.css",
-    "static/js/2.b5686077.chunk.js": "/modprog/static/js/2.b5686077.chunk.js",
-    "static/js/2.b5686077.chunk.js.map": "/modprog/static/js/2.b5686077.chunk.js.map",
+    "static/js/2.71ee131a.chunk.js": "/modprog/static/js/2.71ee131a.chunk.js",
+    "static/js/2.71ee131a.chunk.js.map": "/modprog/static/js/2.71ee131a.chunk.js.map",
     "index.html": "/modprog/index.html",
     "static/css/2.d470c34f.chunk.css.map": "/modprog/static/css/2.d470c34f.chunk.css.map",
     "static/css/main.bfe5c144.chunk.css.map": "/modprog/static/css/main.bfe5c144.chunk.css.map",
-    "static/js/2.b5686077.chunk.js.LICENSE.txt": "/modprog/static/js/2.b5686077.chunk.js.LICENSE.txt"
+    "static/js/2.71ee131a.chunk.js.LICENSE.txt": "/modprog/static/js/2.71ee131a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.12b35f08.js",
     "static/css/2.d470c34f.chunk.css",
-    "static/js/2.b5686077.chunk.js",
+    "static/js/2.71ee131a.chunk.js",
     "static/css/main.bfe5c144.chunk.css",
-    "static/js/main.bca75621.chunk.js"
+    "static/js/main.a1875a1f.chunk.js"
   ]
 }
